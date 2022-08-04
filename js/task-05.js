@@ -5,8 +5,8 @@
 const textOutput = document.querySelector("#name-output");
 const nameDefault = "Anonymous";
 
-document.querySelector("#name-input").addEventListener("input", () => {
-  // textOutput.textContent = textInput.value;
+const textInput = document.querySelector("#name-input");
+textInput.addEventListener("input", () => {
   if (textInput.value.length > 0) {
     // console.log(textInput.value.length);
     textOutput.textContent = textInput.value;

@@ -19,7 +19,7 @@ function onFormSubmit(event) {
       Email: email.value,
       Password: password.value,
     });
-    console.log(event.currentTarget.reset);
+    event.currentTarget.reset();
     // console.log(event.target);
   }
 }
